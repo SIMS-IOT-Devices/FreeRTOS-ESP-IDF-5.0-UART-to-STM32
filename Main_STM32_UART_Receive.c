@@ -98,6 +98,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   uint8_t rxData[30] = "empty \r\n";  // Buffer to store received data
+  int rxData_length = 22;
   HAL_UART_Transmit(&huart2, rxData, sizeof(rxData), 1000);
 
   /* USER CODE END 2 */
@@ -109,11 +110,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
-	  HAL_UART_Receive(&huart1, rxData, sizeof(rxData), HAL_MAX_DELAY);
-	  HAL_UART_Transmit(&huart2, rxData, sizeof(rxData), 1000);
-//	  rxData[30] = "\r\n";
-	  memset(rxData, 0, sizeof(rxData));
+	  HAL_UART_Receive(&huart1, rxData, rxData_length, HAL_MAX_DELAY);
+	  HAL_UART_Transmit(&huart2, rxData, rxData_length, 1000);
 	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */
