@@ -1,1 +1,1 @@
-Transmitting string from ESP32 by using 9600 bit rate via UART 2
+ESP32_send_UART.c - Transmitting string from ESP32 by using 9600 bit rate via UART 2
