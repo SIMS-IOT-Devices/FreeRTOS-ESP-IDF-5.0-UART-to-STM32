@@ -7,5 +7,5 @@ PC send fixed size string.py - Transmitting fixed size string from PC by using 1
 STM32 recieve fixed size string.c - Receiving fixed size string in STM32 by using 115200 bit rate via USART1 <br>
 
 PC - STM32 (Variable string)<br>
-PC send variable size string.py - Transmitting variable size string with "\n" ending from PC by using 115200 bit rate via UART<br>
-STM32 recieve variable size string.c - Receiving variable size string with "\n" ending in STM32 by using 115200 bit rate via USART1 <br>
+PC send variable size string.py - Transmitting variable size string ("\n" ending) from PC by using 115200 bit rate via UART<br>
+STM32 recieve variable size string.c - Receiving variable size string ("\n" ending) in STM32 by using 115200 bit rate via USART1 <br>
